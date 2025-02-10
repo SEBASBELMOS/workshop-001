@@ -12,12 +12,19 @@ The CSV contains 50k rows of candidate data (e.g., first name, last name, email,
 ## Project Structure
 
 ├── Dataset.csv # Raw candidate data 
+
 ├── notebooks/ 
+
 │ 
+
 └── DataEngineer.ipynb # Jupyter Notebook containing the full workflow: 
+
 │ # - Data ingestion & cleaning 
+
 │ # - Database setup & migration 
+
 │ # - Querying & visualizations 
+
 └── README.md # This file
 
 ## Technologies Used
