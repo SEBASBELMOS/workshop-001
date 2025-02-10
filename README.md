@@ -7,11 +7,11 @@ This project is a real exercise modeled after a job interview scenario for a Dat
 - **Perform data cleaning and transformation** based on specific criteria.
 - **Visualize metrics** using Python libraries to generate insightful charts.
 
-The CSV contains 50k rows of candidate data (e.g., first name, last name, email, country, application date, years of experience, seniority, technology, Code Challenge Score, and Technical Interview Score). A candidate is considered **HIRED** if both the Code Challenge Score and Technical Interview Score are greater than or equal to 7.
+The CSV contains 50k rows of candidate data (e.g., first name, last name, email, country, application date, years of experience (YOE), seniority, technology, Code Challenge Score, and Technical Interview Score). A candidate is considered **HIRED** if both the Code Challenge Score and Technical Interview Score are greater than or equal to 7.
 
 ## Project Structure
 
-├── Dataset.csv # Raw candidate data 
+├── candidates.csv # Raw candidate data 
 
 ├── notebooks/ 
 
@@ -59,13 +59,27 @@ The Jupyter Notebook (dataengineer.ipynb) contains the following sections:
 
 1. **Data Ingestion & Cleaning:**
 
-- Reading the CSV file using pandas.read_csv() with the appropriate delimiter.
+- Reading the CSV file using pandas.read_csv() with the delimiter ";".
+    ```bash
+    import pandas as pd
+
+    df = pd.read_csv('../candidates.csv', delimiter=';')
+
 - Cleaning the data (handling missing values, converting data types).
+
 - Transforming the data (e.g., converting Application Date to a datetime object and extracting the year).
+    ```bash
+    df['Application Date'] = pd.to_datetime(df['Application Date'], errors='coerce')
+    print(df.isnull().sum())
+    
+
+    df['Year'] = df['Application Date'].dt.year
+    df['Hired'] = (df['Code Challenge Score'] >= 7) & (df['Technical Interview Score'] >= 7)
+
 
 2. **Database Setup & Data Migration:**
 
-- Creating a SQLite database.
+- Creating a SQL database.
 - Defining the schema using SQLAlchemy.
 - Migrating the cleaned data from the CSV into the database.
 
