@@ -17,7 +17,7 @@ The CSV contains 50k rows of candidate data (e.g., first name, last name, email,
 
 │ 
 
-└── DataEngineer.ipynb # Jupyter Notebook containing the full workflow: 
+└── dataengineer.ipynb # Jupyter Notebook containing the full workflow: 
 
 │ # - Data ingestion & cleaning 
 
@@ -41,20 +41,21 @@ The CSV contains 50k rows of candidate data (e.g., first name, last name, email,
 1. **Clone the Repository:**
    ```bash
    git clone https://github.com/SEBASBELMOS/workshop-001.git
-   cd your_repository
+   cd workshop-001
 
 2. **Set Up a Virtual Environment (recommended):**
     ```bash
     python -m venv venv
-    source venv/bin/activate   # On Windows, use `venv\Scripts\activate`
+    source venv/bin/activate.bat   # On Windows, use: `venv\Scripts\activate.bat`
 
-3. **Install Required Packages:**
+3. **Update pip and Install Required Packages:**
     ```bash
+    python.exe -m pip install --upgrade pip
     pip install pandas sqlalchemy matplotlib jupyter
 
 ## Workflow
 
-The Jupyter Notebook (DataEngineer.ipynb) contains the following sections:
+The Jupyter Notebook (dataengineer.ipynb) contains the following sections:
 
 1. **Data Ingestion & Cleaning:**
 
@@ -84,8 +85,5 @@ The Jupyter Notebook (DataEngineer.ipynb) contains the following sections:
     - Bar Chart: Presenting hires by Seniority.
     - Multiline Chart: Illustrating hires by Country over Years.
 
-## Notes
-
-- Hiring Criteria: A candidate is considered hired if both the Code Challenge Score and Technical Interview Score are ≥ 7.
-- Customization: You may adjust the queries, visualization styles, or even the choice of database based on your preferences.
-- Version Control: Make sure to commit all changes to GitHub to keep your progress registered.
+## Hiring Criteria 
+A candidate is considered hired if both the Code Challenge Score and Technical Interview Score are greater than or equal to 7.
