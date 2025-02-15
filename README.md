@@ -119,6 +119,8 @@ All the libraries are included in the Poetry project config file (_pyproject.tom
             export PATH = "/home/user/.locar/bin:$PATH"
             ```
         -Finally, restart the terminal and execute _poetry --version_.
+
+        
         <img src="https://github.com/SEBASBELMOS/workshop-001/blob/main/assets/poetry_linux_installed.png" alt="Logo" width="400"/>
 
 
