@@ -71,7 +71,7 @@ All the libraries are included in the Poetry project config file (_pyproject.tom
     ```
 
 3. **Update pip and Install Required Packages:**
-    
+    ```bash
     python.exe -m pip install --upgrade pip
     pip install pandas sqlalchemy matplotlib jupyter psycopg2-binary dotenv
     ```
