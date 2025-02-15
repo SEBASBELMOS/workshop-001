@@ -1,40 +1,59 @@
-# Data Engineer Workshop -001: Python Data Engineer Code Challenge
+# Workshop -001: Data Engineer 💻
 
-## Overview
+This project was created by **Sebastian Belalcazar** [@SEBASBELMOS](https://github.com/SEBASBELMOS)
+
+---
+
+## Overview 
 
 This project is a real exercise modeled after a job interview scenario for a Data Engineer role. The objective is to:
 - **Migrate data** from a CSV file into a relational database.
 - **Perform data cleaning and transformation** based on specific criteria.
 - **Visualize metrics** using Python libraries to generate insightful charts.
 
+## Dataset Information
+
 The CSV contains 50k rows of candidate data (e.g., first name, last name, email, country, application date, years of experience (YOE), seniority, technology, Code Challenge Score, and Technical Interview Score). A candidate is considered **HIRED** if both the Code Challenge Score and Technical Interview Score are greater than or equal to 7.
+
+- First Name ➜ Object
+- Last Name ➜ Object
+- Email ➜ Object
+- Country ➜ Object
+- Application Date ➜ Object
+- YOE (years of experience) ➜ Integer
+- Seniority ➜ Object
+- Technology ➜ Object
+- Code Challenge Score ➜ Integer
+- Technical Interview Score ➜ Integer
 
 ## Project Structure
 
-├── candidates.csv # Raw candidate data 
-
-├── notebooks/ 
-
-│ 
-
-└── dataengineer.ipynb # Jupyter Notebook containing the full workflow: 
-
-│ # - Data ingestion & cleaning 
-
-│ # - Database setup & migration 
-
-│ # - Querying & visualizations 
-
-└── README.md # This file
+| Folder/File            | Description |
+|------------------------|------------|
+| **data/**             | Contains datasets used in the workshop |
+| ├── candidates.csv    | CSV file with raw candidate data |
+| **functions/**        | Python package for database connection |
+| ├── db_connection/    | Includes the `db_connection.py` module |
+| │ ├── db_connection.py | Establishes a connection to the Postgres database using SQLAlchemy |
+| **env/**              | This folder is ignored in `.gitignore`, must be created manually |
+| ├── .env             | Stores environment variables for the database connection |
+| **notebooks/**        | Contains Jupyter Notebooks with the workflow |
+| ├── dataengineer.ipynb | Includes data ingestion, cleaning, and visualisation |
+| **pdf/**              | Stores documentation and workshop PDFs |
+| ├── activity.pdf     | PDF with instructions for the activity |
+| **pyproject.toml**    | Poetry configuration file for managing dependencies |
+| **README.md**         | This file |
 
 ## Technologies Used
 
-- **Programming Language:** Python
-- **Data Handling:** pandas
-- **Database:** SQLite
-- **Database Interaction:** SQLAlchemy
-- **Visualization:** matplotlib, seaborn
-- **Environment:** Jupyter Notebook
+- **Programming Language:** Python 3.13.1 -> [Download here](https://www.python.org/downloads/)
+- **Data Handling:** pandas -> [Documentation here](https://pandas.pydata.org/)
+- **Database:** PostgreSQL -> [Download here](https://www.postgresql.org/download/)
+- **Database Interaction:** SQLAlchemy -> [Documentation here](https://docs.sqlalchemy.org/)
+- **Visualization:** Power BI Desktop -> [Download here](https://www.microsoft.com/es-es/power-platform/products/power-bi/desktop)
+- **Environment:** Jupyter Notebook -> [VSCode tool used](https://code.visualstudio.com/docs/datascience/jupyter-notebooks)
+
+All the libraries are included in the Poetry project config file (_pyproject.toml_).
 
 ## Installation and Setup
 
@@ -42,16 +61,22 @@ The CSV contains 50k rows of candidate data (e.g., first name, last name, email,
    ```bash
    git clone https://github.com/SEBASBELMOS/workshop-001.git
    cd workshop-001
+   ```
+
+    <video src="https://github.com/SEBASBELMOS/workshop-001/issues/1#issue-2855639329" controls width="600"></video>
+
 
 2. **Set Up a Virtual Environment (recommended):**
     ```bash
     python -m venv venv
-    source venv/bin/activate.bat   # On Windows, use: `venv\Scripts\activate.bat`
+    source venv/bin/Activate.ps1   # On Windows, use: `venv\Scripts\Activate.ps1`
+    ```
 
 3. **Update pip and Install Required Packages:**
     ```bash
     python.exe -m pip install --upgrade pip
-    pip install pandas sqlalchemy matplotlib jupyter
+    pip install pandas sqlalchemy matplotlib jupyter psycopg2-binary dotenv
+    ```
 
 ## Workflow
 
@@ -64,7 +89,7 @@ The Jupyter Notebook (dataengineer.ipynb) contains the following sections:
     import pandas as pd
 
     df = pd.read_csv('../candidates.csv', delimiter=';')
-
+    ```
 - Cleaning the data (handling missing values, converting data types).
 
 - Transforming the data (e.g., converting Application Date to a datetime object and extracting the year).
@@ -75,6 +100,7 @@ The Jupyter Notebook (dataengineer.ipynb) contains the following sections:
 
     df['Year'] = df['Application Date'].dt.year
     df['Hired'] = (df['Code Challenge Score'] >= 7) & (df['Technical Interview Score'] >= 7)
+    ```
 
 
 2. **Database Setup & Data Migration:**
