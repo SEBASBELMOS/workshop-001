@@ -99,7 +99,7 @@ All the libraries are included in the Poetry project config file (_pyproject.tom
         ```powershell
         (Invoke-WebRequest -Uri https://install.python-poetry.org -UseBasicParsing).Content | py -
         ```
-        <img src="https://github.com/SEBASBELMOS/workshop-001/blob/main/assets/poetry_installation.png" alt="Logo" width="300"/>
+        <img src="https://github.com/SEBASBELMOS/workshop-001/blob/main/assets/poetry_installation.png" alt="Logo" width="600"/>
 
 
 ---
