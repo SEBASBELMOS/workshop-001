@@ -70,10 +70,9 @@ All the libraries are included in the Poetry project config file (_pyproject.tom
     source venv/bin/Activate.ps1   # On Windows, use: `venv\Scripts\Activate.ps1`
     ```
 
-3. **Update pip and Install Required Packages:**
+3. **Update pip**
     ```bash
     python.exe -m pip install --upgrade pip
-    pip install pandas sqlalchemy matplotlib jupyter psycopg2-binary dotenv
     ```
 
 4. **Enviromental variables**
@@ -120,11 +119,21 @@ All the libraries are included in the Poetry project config file (_pyproject.tom
             ```
         -Finally, restart the terminal and execute _poetry --version_.
 
-        
+
         <img src="https://github.com/SEBASBELMOS/workshop-001/blob/main/assets/poetry_linux_installed.png" alt="Logo" width="400"/>
 
-
-
+6. **Poetry Shell**
+    - Enter the Poetry shell with _poetry shell_.
+    - Then, execute _poetry init_, it will create a file called _pyproject.toml_
+    - To add all the dependencies, execute this: 
+        ```bash
+        poetry add pandas matplotlib psycopg2-binary sqlalchemy python-dotenv seaborn
+        ```
+    - Install the dependencies with: 
+        ```bash
+        poetry install
+        ```
+        In case of error with the .lock file, just execute _poetry lock_ to fix it.
 ---
 ## Workflow
 
