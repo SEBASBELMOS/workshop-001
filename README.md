@@ -101,13 +101,22 @@ All the libraries are included in the Poetry project config file (_pyproject.tom
             (Invoke-WebRequest -Uri https://install.python-poetry.org -UseBasicParsing).Content | py -
             ```
             <img src="https://github.com/SEBASBELMOS/workshop-001/blob/main/assets/poetry_installation.png" alt="Logo" width="600"/>
-        - Open Settings app, then open _System_, the _Information_ and finally, _Advanced Settings_. 
-        - In the new window, select _environment variable_.
-        - Now, Set the path provided during the installation in **PATH** so that the `poetry` command works. ("C:\Users\username\AppData\Roaming\Python\Scripts")
+        - Press Win + R, type _sysdm.cpl_, and press **Enter**. 
+        - Go to the _Advanced_ tab, select _environment variable_.
+        - Under System variables, select Path → Click Edit.
+        - Click _Edit_ and set the path provided during the installation in **PATH** so that the `poetry` command works. ("C:\Users\username\AppData\Roaming\Python\Scripts")
         - Restart Powershell and execute _poetry --version_.
 
         
     - Linux
+        - In a terminal, execute this command:
+            ```bash
+            curl -sSL https://install.python-poetry.org | python3 -
+            ```
+            <img src="https://github.com/SEBASBELMOS/workshop-001/blob/main/assets/poetry_linux.png" alt="Logo" width="600"/>
+        - 
+
+
 
 ---
 ## Workflow
