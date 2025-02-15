@@ -114,7 +114,12 @@ All the libraries are included in the Poetry project config file (_pyproject.tom
             curl -sSL https://install.python-poetry.org | python3 -
             ```
             <img src="https://github.com/SEBASBELMOS/workshop-001/blob/main/assets/poetry_linux.png" alt="Logo" width="600"/>
-        - 
+        -  Now, execute:
+            ```bash
+            export PATH = "/home/user/.locar/bin:$PATH"
+            ```
+        Finally, restart the terminal and execute _poetry --version_.
+
 
 
 
