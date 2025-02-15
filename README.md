@@ -150,7 +150,7 @@ All the libraries are included in the Poetry project config file (_pyproject.tom
     
 1. **01_raw-data.ipynb**:
     
-    This notebook will primarily cover loading raw data into a PostgreSQL database. To achieve this, we will import the **connection.py** module, which handles reading environment variables and includes a function that creates the connection engine using **SQLAlchemy**. With this function, we will have the connection engine set up, enabling us to transfer data using the **Pandas** function **pd.DataFrame.to_sql()**
+    This notebook sets up our data pipeline by configuring the environment, importing essential libraries and create a SQLAlchemy engine, then loading raw candidate data from the CSV file (_candidates.csv_) into a Pandas DataFrame, transferring this data into a PostgreSQL database, and verifying the transfer with a simple query.
 
 2. **02_EDA-candidates.ipynb**:
 
