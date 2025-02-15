@@ -30,6 +30,7 @@ The CSV contains 50k rows of candidate data (e.g., first name, last name, email,
 
 | Folder/File            | Description |
 |------------------------|------------|
+| **assets**             | Contains static resources such as images, and other media files for the project documentation |
 | **data/**             | Contains datasets used in the workshop |
 | ├── candidates.csv    | CSV file with raw candidate data |
 | **functions/**        | Python package for database connection |
@@ -63,9 +64,6 @@ All the libraries are included in the Poetry project config file (_pyproject.tom
    cd workshop-001
    ```
 
-    <video src="https://github.com/SEBASBELMOS/workshop-001/issues/1#issue-2855639329" controls width="600"></video>
-
-
 2. **Set Up a Virtual Environment (recommended):**
     ```bash
     python -m venv venv
@@ -73,11 +71,37 @@ All the libraries are included in the Poetry project config file (_pyproject.tom
     ```
 
 3. **Update pip and Install Required Packages:**
-    ```bash
+    
     python.exe -m pip install --upgrade pip
     pip install pandas sqlalchemy matplotlib jupyter psycopg2-binary dotenv
     ```
 
+4. **Enviromental variables**
+    >Realise this in VS Code.
+
+    To establish a connection with the database, we use a module called _connection.py_. This Python script retrieves a file containing our environment variables. Here’s how to create it:
+    1. Inside the cloned repository, create a new directory named *env/*.
+    2. Within that directory, create a file called *.env*.
+    3. In the *.env file*, define the following six environment variables (without double quotes around values):
+        ```python
+        PG_HOST = #host address, e.g. localhost or 127.0.0.1
+        PG_PORT = #PostgreSQL port, e.g. 5432
+
+        PG_USER = #your PostgreSQL user
+        PG_PASSWORD = #your user password
+        
+        PG_DRIVER = postgresql+psycopg2
+        PG_DATABASE = #your database name, e.g. postgres
+        ```
+
+5. **Installing the dependencies with _Poetry_**
+    - Windows: In Powershell, execute this command: 
+        ```powershell
+        (Invoke-WebRequest -Uri https://install.python-poetry.org -UseBasicParsing).Content | py -
+        ```
+
+
+---
 ## Workflow
 
 The Jupyter Notebook (dataengineer.ipynb) contains the following sections:
@@ -88,7 +112,7 @@ The Jupyter Notebook (dataengineer.ipynb) contains the following sections:
     ```bash
     import pandas as pd
 
-    df = pd.read_csv('../candidates.csv', delimiter=';')
+    df = pd.read_csv('../data/candidates.csv', delimiter=';')
     ```
 - Cleaning the data (handling missing values, converting data types).
 
