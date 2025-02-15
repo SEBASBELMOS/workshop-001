@@ -137,7 +137,7 @@ All the libraries are included in the Poetry project config file (_pyproject.tom
 ---
 ## Workflow
 
-The Jupyter Notebook (dataengineer.ipynb) contains the following sections:
+The Jupyter Notebook (01_raw-data.ipynb) contains the following sections:
 
 1. **Data Ingestion & Cleaning:**
 
