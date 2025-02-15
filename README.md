@@ -39,7 +39,7 @@ The CSV contains 50k rows of candidate data (e.g., first name, last name, email,
 | **env/**              | This folder is ignored in `.gitignore`, must be created manually |
 | ├── .env             | Stores environment variables for the database connection |
 | **notebooks/**        | Contains Jupyter Notebooks with the workflow |
-| ├── dataengineer.ipynb | Includes data ingestion, cleaning, and visualisation |
+| ├── 01_raw-data.ipynb | Includes raw data ingestion |
 | **pdf/**              | Stores documentation and workshop PDFs |
 | ├── activity.pdf     | PDF with instructions for the activity |
 | **pyproject.toml**    | Poetry configuration file for managing dependencies |
@@ -64,36 +64,13 @@ All the libraries are included in the Poetry project config file (_pyproject.tom
    cd workshop-001
    ```
 
-2. **Set Up a Virtual Environment (recommended):**
+2. **Set Up a Virtual Environment:**
     ```bash
     python -m venv venv
     source venv/bin/Activate.ps1   # On Windows, use: `venv\Scripts\Activate.ps1`
     ```
 
-3. **Update pip**
-    ```bash
-    python.exe -m pip install --upgrade pip
-    ```
-
-4. **Enviromental variables**
-    >Realise this in VS Code.
-
-    To establish a connection with the database, we use a module called _connection.py_. This Python script retrieves a file containing our environment variables. Here’s how to create it:
-    1. Inside the cloned repository, create a new directory named *env/*.
-    2. Within that directory, create a file called *.env*.
-    3. In the *.env file*, define the following six environment variables (without double quotes around values):
-        ```python
-        PG_HOST = #host address, e.g. localhost or 127.0.0.1
-        PG_PORT = #PostgreSQL port, e.g. 5432
-
-        PG_USER = #your PostgreSQL user
-        PG_PASSWORD = #your user password
-        
-        PG_DRIVER = postgresql+psycopg2
-        PG_DATABASE = #your database name, e.g. postgres
-        ```
-
-5. **Installing the dependencies with _Poetry_**
+3. **Installing the dependencies with _Poetry_**
     - Windows: 
         - In Powershell, execute this command: 
             ```powershell
@@ -122,7 +99,7 @@ All the libraries are included in the Poetry project config file (_pyproject.tom
 
         <img src="https://github.com/SEBASBELMOS/workshop-001/blob/main/assets/poetry_linux_installed.png" alt="Logo" width="400"/>
 
-6. **Poetry Shell**
+4. **Poetry Shell**
     - Enter the Poetry shell with _poetry shell_.
     - Then, execute _poetry init_, it will create a file called _pyproject.toml_
     - To add all the dependencies, execute this: 
@@ -134,7 +111,38 @@ All the libraries are included in the Poetry project config file (_pyproject.tom
         poetry install
         ```
         In case of error with the .lock file, just execute _poetry lock_ to fix it.
+
+5. **PostgreSQL Database**
+    - Install PostgreSQL with this [link here](https://www.postgresql.org/download/)
+    - Open a terminal and execute this command, If the **postgres** user has a password, you will be prompted to enter it: 
+        ´´´bash 
+        psql -U postgres
+        ```
+    - Create a new database with this command:
+        ´´´bash 
+        CREATE DATABASE my_database_name;
+        ```
+    - This is the information you need to add to the _.env_ file in the next step.
+
+6. **Enviromental variables**
+    >Realise this in VS Code.
+
+    To establish a connection with the database, we use a module called _connection.py_. This Python script retrieves a file containing our environment variables. Here’s how to create it:
+    1. Inside the cloned repository, create a new directory named *env/*.
+    2. Within that directory, create a file called *.env*.
+    3. In the *.env file*, define the following six environment variables (without double quotes around values):
+        ```python
+        PG_HOST = #host address, e.g. localhost or 127.0.0.1
+        PG_PORT = #PostgreSQL port, e.g. 5432
+
+        PG_USER = #your PostgreSQL user
+        PG_PASSWORD = #your user password
+        
+        PG_DRIVER = postgresql+psycopg2
+        PG_DATABASE = #your database name, e.g. postgres
+        ```
 ---
+
 ## Workflow
 
 The Jupyter Notebook (01_raw-data.ipynb) contains the following sections:
