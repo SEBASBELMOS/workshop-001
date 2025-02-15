@@ -141,40 +141,22 @@ All the libraries are included in the Poetry project config file (_pyproject.tom
         PG_DRIVER = postgresql+psycopg2
         PG_DATABASE = #your database name, e.g. postgres
         ```
+
 ---
 
 ## Workflow
 
-The Jupyter Notebook (01_raw-data.ipynb) contains the following sections:
-
-1. **Data Ingestion & Cleaning:**
-
-- Reading the CSV file using pandas.read_csv() with the delimiter ";".
-    ```bash
-    import pandas as pd
-
-    df = pd.read_csv('../data/candidates.csv', delimiter=';')
-    ```
-- Cleaning the data (handling missing values, converting data types).
-
-- Transforming the data (e.g., converting Application Date to a datetime object and extracting the year).
-    ```bash
-    df['Application Date'] = pd.to_datetime(df['Application Date'], errors='coerce')
-    print(df.isnull().sum())
+### Notebooks
     
+1. **01_raw-data.ipynb**:
+    
+    This notebook will primarily cover loading raw data into a PostgreSQL database. To achieve this, we will import the **connection.py** module, which handles reading environment variables and includes a function that creates the connection engine using **SQLAlchemy**. With this function, we will have the connection engine set up, enabling us to transfer data using the **Pandas** function **pd.DataFrame.to_sql()**
 
-    df['Year'] = df['Application Date'].dt.year
-    df['Hired'] = (df['Code Challenge Score'] >= 7) & (df['Technical Interview Score'] >= 7)
-    ```
+2. **02_EDA-candidates.ipynb**:
 
+---
 
-2. **Database Setup & Data Migration:**
-
-- Creating a SQL database.
-- Defining the schema using SQLAlchemy.
-- Migrating the cleaned data from the CSV into the database.
-
-3. **Querying the Database:**
+2. **Querying the Database:**
 
 - Retrieving metrics using SQL queries:
     - Hires by Technology: (Pie Chart)
@@ -182,13 +164,15 @@ The Jupyter Notebook (01_raw-data.ipynb) contains the following sections:
     - Hires by Seniority: (Bar Chart)
     - Hires by Country Over Years: (Multiline Chart for USA, Brazil, Colombia, and Ecuador)
 
-4. **Data Visualization:**
+3. **Data Visualization:**
 
 - Creating charts with matplotlib and seaborn:
     - Pie Chart: Displaying hires by Technology.
     - Horizontal Bar Chart: Showing hires by Year.
     - Bar Chart: Presenting hires by Seniority.
     - Multiline Chart: Illustrating hires by Country over Years.
+
+---
 
 ## Hiring Criteria 
 A candidate is considered hired if both the Code Challenge Score and Technical Interview Score are greater than or equal to 7.
