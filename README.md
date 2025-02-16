@@ -118,7 +118,7 @@ All the libraries are included in the Poetry project config file (_pyproject.tom
         ```
     - Create a new database with this command:
         ```bash 
-        CREATE DATABASE my_database_name;
+        CREATE DATABASE database_name;
         ```
     - This is the information you need to add to the _.env_ file in the next step.
 
