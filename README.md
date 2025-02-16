@@ -62,15 +62,9 @@ All the libraries are included in the Poetry project config file (_pyproject.tom
    ```bash
    git clone https://github.com/SEBASBELMOS/workshop-001.git
    cd workshop-001
-   ```
+   ````
 
-2. **Set Up a Virtual Environment (Recommended):**
-    ```bash
-    python -m venv venv
-    source venv/bin/Activate.ps1   # On Windows, use: `venv\Scripts\Activate.ps1`
-    ```
-
-3. **Installing the dependencies with _Poetry_**
+2. **Installing the dependencies with _Poetry_**
     - Windows: 
         - In Powershell, execute this command: 
             ```powershell
@@ -99,12 +93,12 @@ All the libraries are included in the Poetry project config file (_pyproject.tom
 
         <img src="https://github.com/SEBASBELMOS/workshop-001/blob/main/assets/poetry_linux_installed.png" alt="Logo" width="400"/>
 
-4. **Poetry Shell**
+3. **Poetry Shell**
     - Enter the Poetry shell with _poetry shell_.
     - Then, execute _poetry init_, it will create a file called _pyproject.toml_
     - To add all the dependencies, execute this: 
         ```bash
-        poetry add pandas matplotlib psycopg2-binary sqlalchemy python-dotenv seaborn
+        poetry add pandas matplotlib psycopg2-binary sqlalchemy python-dotenv seaborn ipykernel
         ```
     - Install the dependencies with: 
         ```bash
@@ -112,7 +106,7 @@ All the libraries are included in the Poetry project config file (_pyproject.tom
         ```
         In case of error with the .lock file, just execute _poetry lock_ to fix it.
 
-5. **PostgreSQL Database**
+4. **PostgreSQL Database**
     - Install PostgreSQL with this [link here](https://www.postgresql.org/download/)
     - Open a terminal and execute this command, If the **postgres** user has a password, you will be prompted to enter it: 
         ´´´bash 
@@ -124,7 +118,7 @@ All the libraries are included in the Poetry project config file (_pyproject.tom
         ```
     - This is the information you need to add to the _.env_ file in the next step.
 
-6. **Enviromental variables**
+5. **Enviromental variables**
     >Realise this in VS Code.
 
     To establish a connection with the database, we use a module called _connection.py_. This Python script retrieves a file containing our environment variables. Here’s how to create it:
