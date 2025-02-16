@@ -105,6 +105,10 @@ All the libraries are included in the Poetry project config file (_pyproject.tom
         poetry install
         ```
         In case of error with the .lock file, just execute _poetry lock_ to fix it.
+    - Create the kernel with this command (You must choose this kernel when running the notebooks):
+        ```bash
+        poetry run python -m ipykernel install --user --name workshop-001 --display-name "Python (workshop-001)"
+        ```
 
 4. **PostgreSQL Database**
     - Install PostgreSQL with this [link here](https://www.postgresql.org/download/)
@@ -148,6 +152,9 @@ All the libraries are included in the Poetry project config file (_pyproject.tom
 
 2. **02_EDA-candidates.ipynb**:
 
+    This notebook focuses on conducting **Exploratory Data Analysis (EDA)** on the candidates' dataset. EDA is a fundamental step in the data analysis process, as it allows us to understand the structure and characteristics of the data. By examining the dataset, we can identify patterns, relationships, and key insights that inform further analysis and decision-making.
+
+    In this notebook, we will explore the dataset using a range of statistical and visual techniques. We will assess the distribution of variables and investigate correlations between them. Through this process, we aim to develop a thorough understanding of the dataset and extract valuable insights.
 ---
 
 2. **Querying the Database:**
