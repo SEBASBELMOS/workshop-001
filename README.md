@@ -45,7 +45,7 @@ The CSV contains 50k rows of candidate data (e.g., first name, last name, email,
 | **pyproject.toml**    | Poetry configuration file for managing dependencies |
 | **README.md**         | This file |
 
-## Technologies Used
+## Tools and Libraries
 
 - **Programming Language:** Python 3.13.1 -> [Download here](https://www.python.org/downloads/)
 - **Data Handling:** pandas -> [Documentation here](https://pandas.pydata.org/)
@@ -174,5 +174,9 @@ All the libraries are included in the Poetry project config file (_pyproject.tom
 
 ---
 
-## Hiring Criteria 
+### Hiring Criteria 
 A candidate is considered hired if both the Code Challenge Score and Technical Interview Score are greater than or equal to 7.
+
+---
+
+## **Insights**
