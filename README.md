@@ -113,11 +113,11 @@ All the libraries are included in the Poetry project config file (_pyproject.tom
 4. **PostgreSQL Database**
     - Install PostgreSQL with this [link here](https://www.postgresql.org/download/)
     - Open a terminal and execute this command, If the **postgres** user has a password, you will be prompted to enter it: 
-        ´´´bash 
+        ```bash
         psql -U postgres
         ```
     - Create a new database with this command:
-        ´´´bash 
+        ```bash 
         CREATE DATABASE my_database_name;
         ```
     - This is the information you need to add to the _.env_ file in the next step.
