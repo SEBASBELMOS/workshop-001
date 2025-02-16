@@ -64,7 +64,7 @@ All the libraries are included in the Poetry project config file (_pyproject.tom
    cd workshop-001
    ```
 
-2. **Set Up a Virtual Environment:**
+2. **Set Up a Virtual Environment (Recommended):**
     ```bash
     python -m venv venv
     source venv/bin/Activate.ps1   # On Windows, use: `venv\Scripts\Activate.ps1`
