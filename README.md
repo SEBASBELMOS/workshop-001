@@ -175,9 +175,24 @@ All the libraries are included in the Poetry project config file (_pyproject.tom
 
 ---
 
-### Hiring Criteria 
-A candidate is considered hired if both the Code Challenge Score and Technical Interview Score are greater than or equal to 7.
+## Key Insights & Findings  
+- The hiring process is highly selective, with only **13% of applicants meeting the criteria**.  
+- **Game Development**, **DevOps**, and **CMS-related roles** had the highest number of hires, reflecting industry demand.  
+- Recruitment is geographically diverse, spanning **244 countries**, though some regions have notably higher selection rates.  
+- **Interns reported the highest average years of experience (15.41 years)**, indicating a possible **data inconsistency**.  
+
+## Areas for Improvement  
+
+✅ **Data Quality & Consistency**  
+- Investigate why **Interns have the highest YoE** and refine seniority classifications.  
+- Ensure **application data from August to December 2022** is fully recorded.  
+
+✅ **Scoring & Hiring Criteria**  
+- Reassess the **uniformity of test scores**, ensuring **clearer candidate differentiation**.  
+- Consider **adjusting the 7+ score requirement** to increase the **low selection rate (13%)**.  
+
+✅ **Data Collection & Tracking**  
+- Improve **tracking of reapplicants**, as **165 duplicated emails** were identified.  
+- Ensure **all application records are captured** to prevent gaps in data collection.  
 
 ---
-
-## **Insights**
