@@ -1,10 +1,7 @@
-# Environment variables
 env/
 
-# Python
 __pycache__/
 
-# Poetry
 poetry.lock
 
 notebooks\tests.ipynb
