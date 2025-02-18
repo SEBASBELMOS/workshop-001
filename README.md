@@ -98,7 +98,7 @@ All the libraries are included in the Poetry project config file (_pyproject.tom
     - Then, execute _poetry init_, it will create a file called _pyproject.toml_
     - To add all the dependencies, execute this: 
         ```bash
-        poetry add pandas matplotlib psycopg2-binary sqlalchemy python-dotenv seaborn ipykernel
+        poetry add pandas matplotlib psycopg2-binary sqlalchemy python-dotenv seaborn ipykernel dotenv
         ```
     - Install the dependencies with: 
         ```bash
@@ -155,6 +155,13 @@ All the libraries are included in the Poetry project config file (_pyproject.tom
     This notebook focuses on conducting **Exploratory Data Analysis (EDA)** on the candidates' dataset. EDA is a fundamental step in the data analysis process, as it allows us to understand the structure and characteristics of the data. By examining the dataset, we can identify patterns, relationships, and key insights that inform further analysis and decision-making.
 
     In this notebook, we will explore the dataset using a range of statistical and visual techniques. We will assess the distribution of variables and investigate correlations between them. Through this process, we aim to develop a thorough understanding of the dataset and extract valuable insights.
+
+3. **03_data-load.ipynb**:
+
+    This notebook carries out various data analysis tasks, including data cleansing and transformation. For instance, several columns are transformed using Pandas, facilitated by a module named **connection.py**, which establishes a connection to a **PostgreSQL database** where the raw data is stored. 
+    
+    Subsequently, the cleaned data is loaded into a new table named **"candidates_hired"**.
+
 ---
 
 ## Key Insights & Findings  
