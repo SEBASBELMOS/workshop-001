@@ -1,9 +1,5 @@
 # Workshop -001: Data Engineer 💻
 
-This project was created by **Sebastian Belalcazar** [@SEBASBELMOS](https://github.com/SEBASBELMOS)
-
----
-
 ## Overview 
 
 This project is a real exercise modeled after a job interview scenario for a Data Engineer role. The objective is to:
