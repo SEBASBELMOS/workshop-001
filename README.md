@@ -70,7 +70,7 @@ All the libraries are included in the Poetry project config file (_pyproject.tom
             ```powershell
             (Invoke-WebRequest -Uri https://install.python-poetry.org -UseBasicParsing).Content | py -
             ```
-            <img src="https://github.com/SEBASBELMOS/workshop-001/blob/main/assets/poetry_installation.png" alt="Logo" width="600"/>
+            <img src="https://github.com/SEBASBELMOS/workshop-001/blob/main/assets/poetry_installation.png" width="600"/>
         - Press Win + R, type _sysdm.cpl_, and press **Enter**. 
         - Go to the _Advanced_ tab, select _environment variable_.
         - Under System variables, select Path → Click Edit.
@@ -83,7 +83,7 @@ All the libraries are included in the Poetry project config file (_pyproject.tom
             ```bash
             curl -sSL https://install.python-poetry.org | python3 -
             ```
-            <img src="https://github.com/SEBASBELMOS/workshop-001/blob/main/assets/poetry_linux.png" alt="Logo" width="600"/>
+            <img src="https://github.com/SEBASBELMOS/workshop-001/blob/main/assets/poetry_linux.png" width="600"/>
         -  Now, execute:
             ```bash
             export PATH = "/home/user/.locar/bin:$PATH"
@@ -91,7 +91,7 @@ All the libraries are included in the Poetry project config file (_pyproject.tom
         -Finally, restart the terminal and execute _poetry --version_.
 
 
-        <img src="https://github.com/SEBASBELMOS/workshop-001/blob/main/assets/poetry_linux_installed.png" alt="Logo" width="400"/>
+        <img src="https://github.com/SEBASBELMOS/workshop-001/blob/main/assets/poetry_linux_installed.png" width="400"/>
 
 3. **Poetry Shell**
     - Enter the Poetry shell with _poetry shell_.
@@ -146,6 +146,8 @@ All the libraries are included in the Poetry project config file (_pyproject.tom
 
 ### Notebooks
     
+    You must run the three notebooks in the following order to ensure proper execution.
+
 1. **01_raw-data.ipynb**:
     
     This notebook sets up our data pipeline by configuring the environment, importing essential libraries and create a SQLAlchemy engine, then loading raw candidate data from the CSV file (_candidates.csv_) into a Pandas DataFrame, transferring this data into a PostgreSQL database, and verifying the transfer with a simple query.
@@ -196,3 +198,9 @@ Further investigation is necessary to determine if this decline is **temporary o
 - Ensure **all application records are captured** to prevent gaps in data collection.  
 
 ---
+
+## Power BI Connection (Not necessary)
+1. Open Power BI Desktop and create a new dashboard. 
+2. Select the _Get data_ option, then choose the "_PostgreSQL Database_" option.
+
+<img src="https://github.com/SEBASBELMOS/workshop-001/blob/main/assets/poetry_linux_installed.png" width="400"/>
