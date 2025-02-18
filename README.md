@@ -211,7 +211,7 @@ Further investigation is necessary to determine if this decline is **temporary o
 
 4. Fill the following fields with your Postgres credentials.
     
-    <img src="https://github.com/SEBASBELMOS/workshop-001/blob/main/assets/postgres_access_pbi.png" width="400"/>    
+    <img src="https://github.com/SEBASBELMOS/workshop-001/blob/main/assets/postrgres_access_pbi.png" width="400"/>    
 
 5. After establishing the connection, these tables will be displayed.You need to select the "candidates_hired" table, and then you can start creating your own dashboards.
     
