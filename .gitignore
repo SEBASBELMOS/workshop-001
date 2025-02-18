@@ -2,7 +2,7 @@ env/
 
 __pycache__/
 
-
+poetry.lock
 
 notebooks\tests.ipynb
 
