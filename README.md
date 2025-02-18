@@ -219,3 +219,7 @@ Further investigation is necessary to determine if this decline is **temporary o
 
 ---
 
+## **Author**  
+Created by **Sebastian Belalcazar Mosquera**. Connect with me on [LinkedIn](https://www.linkedin.com/in/sebasbelmos/) for feedback, suggestions, or collaboration opportunities!
+
+---
