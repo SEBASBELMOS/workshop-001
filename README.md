@@ -172,11 +172,13 @@ All the libraries are included in the Poetry project config file (_pyproject.tom
 - **Hiring trends have fluctuated significantly over the years** for these four countries.  
 - **Brazil and Colombia experienced the highest number of hires in 2019 and 2020**, followed by a **gradual decline in subsequent years**.  
 - **Ecuador also peaked in 2020**, aligning with Colombia, before following a similar downward trend.  
-- By **2022, all three countries recorded their lowest number of hires**, which could suggest **a shift in recruitment strategies, decreased hiring demand, or incomplete data for that year**.  
+- **The United States exhibited a more stable pattern**, though it also experienced **some fluctuations**, with a dip in **2020**, a **partial recovery in 2021**, and then a decline in 2022.  
+- By **2022, all four countries recorded their lowest number of hires**, which could suggest **a shift in recruitment strategies, decreased hiring demand, or incomplete data for that year**.  
 
-This pattern points to a **declining recruitment rate in recent years**, potentially influenced by **economic factors, policy changes, or evolving industry needs**. 
+This pattern indicates a **declining recruitment rate in recent years**, likely influenced by **economic factors, evolving industry needs, or internal policy changes**.  
 
 Further investigation is necessary to determine if this decline is **temporary or indicative of a long-term shift**.  
+
 
 
 ## Areas for Improvement  
