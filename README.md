@@ -207,7 +207,7 @@ Further investigation is necessary to determine if this decline is **temporary o
 
 3. Insert the _PostgreSQL Server_ and _Database Name_.
     
-    <img src="https://github.com/SEBASBELMOS/workshop-001/blob/main/assets/postgres_pbi.png" width="400"/>
+    <img src="https://github.com/SEBASBELMOS/workshop-001/blob/main/assets/postgres_pbi.png" width="200"/>
 
 4. Fill the following fields with your Postgres credentials.
     
@@ -215,7 +215,7 @@ Further investigation is necessary to determine if this decline is **temporary o
 
 5. After establishing the connection, these tables will be displayed.You need to select the "candidates_hired" table, and then you can start creating your own dashboards.
     
-    <img src="https://github.com/SEBASBELMOS/workshop-001/blob/main/assets/tables.png" width="400"/>
+    <img src="https://github.com/SEBASBELMOS/workshop-001/blob/main/assets/tables.png" width="200"/>
 
 ---
 
