@@ -157,29 +157,22 @@ All the libraries are included in the Poetry project config file (_pyproject.tom
     In this notebook, we will explore the dataset using a range of statistical and visual techniques. We will assess the distribution of variables and investigate correlations between them. Through this process, we aim to develop a thorough understanding of the dataset and extract valuable insights.
 ---
 
-2. **Querying the Database:**
-
-- Retrieving metrics using SQL queries:
-    - Hires by Technology: (Pie Chart)
-    - Hires by Year: (Horizontal Bar Chart)
-    - Hires by Seniority: (Bar Chart)
-    - Hires by Country Over Years: (Multiline Chart for USA, Brazil, Colombia, and Ecuador)
-
-3. **Data Visualization:**
-
-- Creating charts with matplotlib and seaborn:
-    - Pie Chart: Displaying hires by Technology.
-    - Horizontal Bar Chart: Showing hires by Year.
-    - Bar Chart: Presenting hires by Seniority.
-    - Multiline Chart: Illustrating hires by Country over Years.
-
----
-
 ## Key Insights & Findings  
 - The hiring process is highly selective, with only **13% of applicants meeting the criteria**.  
 - **Game Development**, **DevOps**, and **CMS-related roles** had the highest number of hires, reflecting industry demand.  
 - Recruitment is geographically diverse, spanning **244 countries**, though some regions have notably higher selection rates.  
 - **Interns reported the highest average years of experience (15.41 years)**, indicating a possible **data inconsistency**.  
+
+## Hires by Country Over the Years (*USA, Brazil, Colombia, Ecuador*)  
+- **Hiring trends have fluctuated significantly over the years** for these four countries.  
+- **Brazil and Colombia experienced the highest number of hires in 2019 and 2020**, followed by a **gradual decline in subsequent years**.  
+- **Ecuador also peaked in 2020**, aligning with Colombia, before following a similar downward trend.  
+- By **2022, all three countries recorded their lowest number of hires**, which could suggest **a shift in recruitment strategies, decreased hiring demand, or incomplete data for that year**.  
+
+This pattern points to a **declining recruitment rate in recent years**, potentially influenced by **economic factors, policy changes, or evolving industry needs**. 
+
+Further investigation is necessary to determine if this decline is **temporary or indicative of a long-term shift**.  
+
 
 ## Areas for Improvement  
 
