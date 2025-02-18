@@ -189,7 +189,7 @@ Further investigation is necessary to determine if this decline is **temporary o
 
 ✅ **Scoring & Hiring Criteria**  
 - Reassess the **uniformity of test scores**, ensuring **clearer candidate differentiation**.  
-- Consider **adjusting the 7+ score requirement** to increase the **low selection rate (13%)**.  
+- Consider **adjusting the 7+ score requirement** to increase the **low selection rate (11.8%)**.  
 
 ✅ **Data Collection & Tracking**  
 - Improve **tracking of reapplicants**, as **165 duplicated emails** were identified.  
@@ -211,7 +211,7 @@ Further investigation is necessary to determine if this decline is **temporary o
     
     <img src="https://github.com/SEBASBELMOS/workshop-001/blob/main/assets/postrgres_access_pbi.png" width="400"/>    
 
-5. After establishing the connection, these tables will be displayed.You need to select the "candidates_hired" table, and then you can start creating your own dashboards.
+5. After establishing the connection, these tables will be displayed.You need to select the "_candidates_hired_" table, and then you can start creating your own dashboards.
     
     <img src="https://github.com/SEBASBELMOS/workshop-001/blob/main/assets/tables.png" width="200"/>
 
