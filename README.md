@@ -26,19 +26,21 @@ The CSV contains 50k rows of candidate data (e.g., first name, last name, email,
 
 | Folder/File            | Description |
 |------------------------|------------|
-| **assets**             | Contains static resources such as images, and other media files for the project documentation |
-| **data/**             | Contains datasets used in the workshop |
-| ├── candidates.csv    | CSV file with raw candidate data |
-| **functions/**        | Python package for database connection |
-| ├── db_connection/    | Includes the `db_connection.py` module |
-| │ ├── db_connection.py | Establishes a connection to the Postgres database using SQLAlchemy |
-| **env/**              | This folder is ignored in `.gitignore`, must be created manually |
-| ├── .env             | Stores environment variables for the database connection |
-| **notebooks/**        | Contains Jupyter Notebooks with the workflow |
-| ├── 01_raw-data.ipynb | Includes raw data ingestion |
-| **pdf/**              | Stores documentation and workshop PDFs |
-| ├── activity.pdf     | PDF with instructions for the activity |
-| **pyproject.toml**    | Poetry configuration file for managing dependencies |
+| **assets**             | Static resources (images, documentation, etc.) |
+| **data/**             | Dataset used in the project |
+| ├── candidates.csv    | Raw dataset |
+| **functions/**        | Utility functions |
+| ├── db_connection/    | Database connection module |
+| │ ├── db_connection.py | Connects to PostgreSQL using SQLAlchemy |
+| **env/**              | Environment variables (ignored in .gitignore) |
+| ├── .env             | tores database credentials |
+| **notebooks/**        | Jupyter Notebooks with analysis |
+├── 01_raw-data.ipynb    | Raw data ingestion |
+├── 02_EDA-candidates.ipynb  | Exploratory Data Analysis (EDA) |
+├── 03_data-load.ipynb   | Data cleansing and transformation |
+| **pdf/**              | Documentation and workshop PDFs |
+| ├── Workshop-001 Data engineer.pdf     | PDF with instructions for the workshop |
+| **pyproject.toml**    | Poetry dependency management file |
 | **README.md**         | This file |
 
 ## Tools and Libraries
@@ -47,7 +49,7 @@ The CSV contains 50k rows of candidate data (e.g., first name, last name, email,
 - **Data Handling:** pandas -> [Documentation here](https://pandas.pydata.org/)
 - **Database:** PostgreSQL -> [Download here](https://www.postgresql.org/download/)
 - **Database Interaction:** SQLAlchemy -> [Documentation here](https://docs.sqlalchemy.org/)
-- **Visualization:** Power BI Desktop -> [Download here](https://www.microsoft.com/es-es/power-platform/products/power-bi/desktop)
+- **Visualisation:** Power BI Desktop -> [Download here](https://www.microsoft.com/es-es/power-platform/products/power-bi/desktop)
 - **Environment:** Jupyter Notebook -> [VSCode tool used](https://code.visualstudio.com/docs/datascience/jupyter-notebooks)
 
 All the libraries are included in the Poetry project config file (_pyproject.toml_).
