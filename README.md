@@ -203,4 +203,7 @@ Further investigation is necessary to determine if this decline is **temporary o
 1. Open Power BI Desktop and create a new dashboard. 
 2. Select the _Get data_ option, then choose the "_PostgreSQL Database_" option.
 
-<img src="https://github.com/SEBASBELMOS/workshop-001/blob/main/assets/pbi.png" width="400"/>
+    <img src="https://github.com/SEBASBELMOS/workshop-001/blob/main/assets/pbi.png" width="400"/>
+
+3. Insert the _PostgreSQL Server_ and _Database Name_.
+    <img src="https://github.com/SEBASBELMOS/workshop-001/blob/main/assets/postgres_pbi.png" width="400"/>
