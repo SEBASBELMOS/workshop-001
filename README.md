@@ -217,6 +217,8 @@ Further investigation is necessary to determine if this decline is **temporary o
     
     <img src="https://github.com/SEBASBELMOS/workshop-001/blob/main/assets/tables.png" width="200"/>
 
+- Open my Power BI Visualisation [here](https://app.powerbi.com/view?r=eyJrIjoiYzVmMGFjYTktNzE2Ni00MWNhLWE2ODktOWMwZTY2OTdiMGU5IiwidCI6IjY5M2NiZWEwLTRlZjktNDI1NC04OTc3LTc2ZTA1Y2I1ZjU1NiIsImMiOjR9)
+
 ---
 
 ## **Author**  
