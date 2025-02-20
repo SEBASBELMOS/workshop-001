@@ -5,7 +5,7 @@
 This project is a real exercise modeled after a job interview scenario for a Data Engineer role. The objective is to:
 - **Migrate data** from a CSV file into a relational database.
 - **Perform data cleaning and transformation** based on specific criteria.
-- **Visualize metrics** using Python libraries to generate insightful charts.
+- **Visualise metrics** using Python libraries to generate insightful charts.
 
 ## Dataset Information
 
