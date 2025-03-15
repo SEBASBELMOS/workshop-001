@@ -1,4 +1,4 @@
-# Workshop -001: Data Engineer 💻
+# Workshop-001: Data Engineer 💻
 
 ## Overview 
 
@@ -33,7 +33,7 @@ The CSV contains 50k rows of candidate data (e.g., first name, last name, email,
 | ├── db_connection/    | Database connection module |
 | │ ├── db_connection.py | Connects to PostgreSQL using SQLAlchemy |
 | **env/**              | Environment variables (ignored in .gitignore) |
-| ├── .env             | tores database credentials |
+| ├── .env             | Stores database credentials |
 | **notebooks/**        | Jupyter Notebooks with analysis |
 ├── 01_raw-data.ipynb    | Raw data ingestion |
 ├── 02_EDA-candidates.ipynb  | Exploratory Data Analysis (EDA) |
